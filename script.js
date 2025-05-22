@@ -49,7 +49,10 @@ return num1 / num2;
 function mostrarDivision(){
 num = parseInt(document.getElementById("num").value);
 num2 = parseInt(document.getElementById("num2").value);
+if(num2 ==0){
+ resultado ="No se puede realizar la operacion";
+}else{
 resultado=division(num,num2);
-console.log(resultado);
+}
 document.getElementById("resultado").textContent = "El resultado es: " + resultado;
 }
